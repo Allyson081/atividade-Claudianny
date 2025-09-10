@@ -1,0 +1,61 @@
+class Carro:
+    def __init__(self, marca, modelo, cor):
+        self.marca = marca
+        self.modelo = modelo
+        self.cor = cor
+        self.motor_ligado = False
+    def ligar_motor(self):
+        if not self.motor_ligado:
+            self.motor_ligado = True
+            print(f"O Motor do {self.marca} {self.modelo} {self.cor} foi ligado")
+    def Acelerar(self):
+        print(f"o Motorista do {self.marca} {self.modelo} {self.cor} acelerou e atingiu 120Km/H ")
+    def Freiar(self):
+        print(f"O Motorista do {self.marca} {self.modelo} {self.cor} Freiou bruscamente e quase acarretou em um acidente gravissimo!")
+    
+meu_carro = Carro("Honda", "Civic", "Preto")
+    
+meu_carro.ligar_motor()
+meu_carro.Acelerar()
+meu_carro.Freiar()
+
+
+class Moto:
+    def __init__(self, marca, modelo, cor):
+        self.marca = marca
+        self.modelo = modelo
+        self.cor = cor
+        
+    def Andar(self):
+        print(f"O Piloto dono da {self.marca} {self.modelo} {self.cor} saiu transitando por Paulista")
+    def Empinar(self):
+        print(f"Devido a sua imprudência de estar empinando em via pública o motorisa da {self.marca} {self.modelo} {self.cor} causou um acidente gravissimo em frente ao shopping North Way")
+    def Quebrar(self):
+        print(f"A moto da {self.marca} {self.modelo} {self.cor} ficou destruida devido ao acidente e o piloto infelizmente veio a Obito")
+minha_moto = Moto("Honda", "Titan 160" , "Preta")
+minha_moto.Andar()
+minha_moto.Empinar()
+minha_moto.Quebrar()
+
+class Caminhao:
+    def __init__(self, empresa, modelo, ano):
+        self.empresa = empresa
+        self.modelo = modelo
+        self.ano = ano
+        
+    def Entrega(self):
+        print(f"O caminhão {self.modelo} {self.ano} da empresa {self.empresa} saiu para uma entrega em.")
+    
+    
+    
+    def Reabastecer(self):
+        print(f"O caminhao {self.modelo} {self.ano} Encheu o Tanque no posto Ypiranga na BR-101 na saida do Estado da Bahia")
+    
+    def Tombar(self):
+        print(f"O caminhão {self.modelo} {self.ano} da empresa {self.empresa} Tombou proximo ao Estado de Pernambuco tendo sua carga furtada pela população presente no momento, deixando varias pessoas sem suas comprinhas da Shein!")
+        
+meu_caminhao = Caminhao("Shein", "Volvo FH540", 2025)
+
+meu_caminhao.Entrega()
+meu_caminhao.Reabastecer()
+meu_caminhao.Tombar()
